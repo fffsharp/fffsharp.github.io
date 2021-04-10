@@ -1,0 +1,48 @@
+---
+layout: default
+title: F#ドキュメント
+image: "https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/common/fs-octcat.png"
+description: F# documents written in Japanese!!
+---
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  <style type="text/css">
+    body {
+      font-family: 'Helvetica Neue', Helvetica, 'Sawarabi Gothic', Arial, serif;
+    }
+  </style>
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image }}">
+  {% endif %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYFFSF96LR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-SYFFSF96LR');
+  </script>
+</head>
+
+<body>
+  This site is for F# lovers!!
+
+  <section>
+    <h1>Categories</h2>
+      <ul>
+        {% for tag in site.tags %}
+        <article>
+          <h2 id="tag_{{ tag[0] }}">{{ tag[0] }}
+    </h1>
+    <ul>
+      {% for post in tag[1] %}
+      <li><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a> : {{ post.date| date_to_string | date:
+        "%Y-%m-%d" }}</li>
+      {% endfor %}
+    </ul>
+    </article>
+    {% endfor %}
+    </ul>
+  </section>
+</body>
