@@ -39,13 +39,13 @@ F# を使うには Microsoft が提供している dotnet というツールが�
 ![](https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/build-a-dev-env/installer-3.png)  
 
 <br>
-インストールが完了したらコマンドプロンプトやPowerShell、zsh、bushなどのシェルツールを起動しましょう。  
+インストールが完了したらコマンドプロンプトやPowerShell、zsh、bushなどのターミナルツールを起動しましょう。  
 Windowsの場合はタスクバーから検索をすることで起動することができます。  
 
 ![](https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/build-a-dev-env/powershell.png)  
 
 <br>
-シェルツールを起動したら `dotnet --version` コマンドを実行します。  
+ターミナルツールを起動したら `dotnet --version` コマンドを実行します。  
 
 ![](https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/build-a-dev-env/dotnet-1.png)  
 
@@ -78,7 +78,7 @@ F# の開発する上では必須ではないですが導入しておくと格�
 ![](https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/build-a-dev-env/vsc-installer-4.png)  
 
 <br>
-インストールが完了したらPCを再起動してから、PowerShell などのシェルツールを起動して `code --version` コマンドを実行してみてください。　　
+インストールが完了したらPCを再起動してから、PowerShell などのターミナルツールを起動して `code --version` コマンドを実行してみてください。　　
 
 ![](https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/build-a-dev-env/code-1.png)  
 

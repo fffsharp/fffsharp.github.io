@@ -45,7 +45,7 @@ F# Script は大きなプログラムや速度が重視されるような場面�
 
 <br>
 
-もしくはシェルで以下のように実行することで起動させることも可能です。  
+もしくターミナルで以下のように実行することで起動させることも可能です。  
 
 {% highlight powershell %}code "C:/project/hello-world"  
 {% endhighlight %}  
@@ -94,7 +94,7 @@ VSCode が起動したら `main.fsx` という名前のファイルを追加し�
 
 <br>
 
-もしくはシェルから直接実行させることもできます。  
+もしくはターミナルから直接実行させることもできます。  
 その場合はプロジェクトのディレクトリに `cd` コマンドで移動してから以下のコマンドを実行します。  
 
 {% highlight powershell %}cd C:/project/hello-world  
