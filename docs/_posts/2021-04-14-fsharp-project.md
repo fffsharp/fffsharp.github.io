@@ -33,10 +33,10 @@ F# Script の場合と比べて手軽さはありませんが、より多彩な�
 
 **`PowerShell`** や **`zsh`** などのターミナルツールを起動して、プロジェクトを作成したいディレクトリへ移動します。 以下の例ではCドライブ直下に **`projects`** ディレクトリを作成してから移動しています。  
 
-```powershell
-mkdir C:/projects
+
+{% highlight powershell %}mkdir C:/projects  
 cd C:/projects
-```
+{% endhighlight %}  
 
 <br>
 
@@ -45,9 +45,8 @@ cd C:/projects
 **`dotnet new`** コマンドを利用してプロジェクトを作成します。  
 以下の例では **`HelloWorld`** というプロジェクトを作成しています。
 
-```powershell
-dotnet new console -lang="F#" -o="HelloWorld"
-```
+{% highlight powershell %}dotnet new console -lang="F#" -o="HelloWorld"
+{% endhighlight %}  
 
 <br>
 
@@ -56,9 +55,8 @@ dotnet new console -lang="F#" -o="HelloWorld"
 VSCode でプロジェクトを開いてみましょう。  
 以下のコマンドを実行すると **`HelloWorld`** プロジェクトが VSCode で開けます。
 
-```powershell
-code ./HelloWorld
-```
+{% highlight powershell %}code ./HelloWorld
+{% endhighlight %}  
 
 VSCode でプロジェクトを開くと **`ionide`** が読み込みを開始します。  
 読み込みが完了すると自動で F# のタブに移動するので **`Program.fs`** を開くと以下のような状態になると思います。  
@@ -111,9 +109,8 @@ VSCode でデバッグする環境を構築していきます。
 **`target-framework`** に指定する .NET のバージョンを調べるには、PowerShell や zsh などのターミナルで調べる必要があります。  
 以下のコマンドを実行することでバージョンを確認することが可能です。  
 
-```powershell
-dotnet --version
-```
+{% highlight powershell %}dotnet --version
+{% endhighlight %}  
 
 ここで表示されるバージョンは **`X.Y.ZZZ`** かそれ以上の桁数での表現になっていると思います。  
 ただ **`target-framework`** に指定する時は **`X.Y`** の部分だけなので注意が必要です。  
@@ -279,18 +276,16 @@ F# の場合、プロジェクトは **`.fsproj`** ファイルで管理して�
 まずはソリューションを管理するディレクトリと **`.sln`** を作成します。  
 今回は **`C:/projects`** を作業ディレクトリとして作業していきます。  
 
-```powershell
-cd C:/projects
-```
+{% highlight powershell %}cd C:/projects
+{% endhighlight %}  
 
 <br>  
 
 **`.sln`** を作成するためには **`dotnet new sln`** コマンドを利用します。  
 今回は **`HelloSystem`** というソリューションを作成しました。  
 
-```powershell
-dotnet new sln -o="HelloSystem"
-```
+{% highlight powershell %}dotnet new sln -o="HelloSystem"
+{% endhighlight %}  
 
 <br>  
 
@@ -302,19 +297,20 @@ dotnet new sln -o="HelloSystem"
 
 **`HelloSystem`** ディレクトリに移動しておきます。  
 
-```powershell
-cd HelloSystem
-```
+{% highlight powershell %}cd HelloSystem
+{% endhighlight %}  
+
+<br>
 
 - ステップ 2  
 
 ソリューションに所属させるプロジェクトを作成します。  
 今回はコンソールプロジェクトとライブラリプロジェクトを一つずつ作成します。  
 
-```powershell
-dotnet new console -lang="F#" -o="HelloConsole"
+
+{% highlight powershell %}dotnet new console -lang="F#" -o="HelloConsole"  
 dotnet new classlib -lang="F#" -o="HelloModule"
-```  
+{% endhighlight %}  
 
 <br>  
 
@@ -329,10 +325,9 @@ dotnet new classlib -lang="F#" -o="HelloModule"
 作成したプロジェクトを **`HelloSystem.sln`** に所属させます。  
 **`dotnet sln add`** コマンドを利用することで簡単に所属させることが可能です。  
 
-```powershell
-dotnet sln add ./HelloConsole
+{% highlight powershell %}dotnet sln add ./HelloConsole  
 dotnet sln add ./HelloModule
-```  
+{% endhighlight %}  
 
 <br>
 
@@ -352,10 +347,9 @@ dotnet sln add ./HelloModule
 これを解消するには **`HelloConsole.fsproj`** に **`HelloModule`** を利用することを宣言する必要があります。  
 手で書いてもいいのですが通常 **`dotnet add reference`** コマンドを利用します。  
 
-```powershell
-cd HelloConsole
+{% highlight powershell %}cd HelloConsole  
 dotnet add reference ../HelloModule
-```  
+{% endhighlight %}    
 
 <br>  
 
