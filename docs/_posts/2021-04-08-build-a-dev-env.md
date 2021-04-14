@@ -4,7 +4,7 @@ title: "開発環境の構築"
 date: 2021-04-08 12:00:00 +0900
 image: "https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/common/fs-octcat.png"
 categories: [posts]
-tags: [環境構築]
+tags: ["環境構築"]
 ---
 
 ## はじめに  

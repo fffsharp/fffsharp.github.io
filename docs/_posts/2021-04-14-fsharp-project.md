@@ -4,7 +4,7 @@ title: "F# で開発をはじめる"
 date: 2021-04-14 09:30:00 +0900
 image: "https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/common/fs-octcat.png"
 categories: [posts]
-tags: [環境構築]
+tags: ["環境構築"]
 ---
 
 ## はじめに  
