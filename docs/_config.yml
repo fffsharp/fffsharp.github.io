@@ -24,8 +24,8 @@
 title: F# documents in Japanese
 email: midorikawa@tech-leaves.com
 description: Hi, F#er's!!
-baseurl: "/fsdoc-jp" # the subpath of your site, e.g. /blog
-url: "https://tatsuya-midorikawa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.fsdocjp.tech" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _midoliy_
 github_username: tatsuya-midorikawa
 lang: ja-JP
