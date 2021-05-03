@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "型とは"
-date: 2021-04-08 12:00:00 +0900
+date: 2021-05-03 12:00:00 +0900
 image: "https://raw.githubusercontent.com/tatsuya-midorikawa/images/main/fsdoc-jp/common/fs-octcat.png"
 description: F#プログラミングを行っていく上で基本となる型について簡単に紹介します。
 categories: [posts]
