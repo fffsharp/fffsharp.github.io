@@ -22,12 +22,12 @@
 # highlighter: rouge
 
 title: F# documents in Japanese
-email: midorikawa@tech-leaves.com
+email: midoliy@outlook.jp
 description: Hi, F#er's!!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.fsdocjp.tech" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _midoliy_
-github_username: tatsuya-midorikawa
+github_username: fffsharp
 lang: ja-JP
 
 # Build settings
