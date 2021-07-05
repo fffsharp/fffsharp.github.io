@@ -33,16 +33,6 @@ F# では値と名前を関連付けることを **束縛** または **バイ�
 <br>  
 <br>  
 
-## let mutable  
-
-F# では基本的に値は immutable なものですが、変更可能な値 (= mutable な値) として let 束縛することもできます。その場合は **let mutable** というキーワードを利用して値を束縛します。  
-これは C# や Java、Python、TypeScript などの非関数型プログラミング言語でいうところの **変数** にあたります。
-
-（TBD）
-
-<br>  
-<br>  
-
 ## サンプル  
 
 let束縛は ```let 名称 = 値``` の形で宣言します。  
@@ -55,5 +45,15 @@ let number = 100
 let title = "Fun Fan F#!!"
 
 // 関数値
-let function = fun x -> x * 2
+let func = fun x -> x * 2
 {% endhighlight %}
+
+<br>  
+<br>  
+
+## let mutable  
+
+F# では基本的に値は immutable なものですが、変更可能な値 (= mutable な値) として let 束縛することもできます。その場合は **let mutable** というキーワードを利用して値を束縛します。  
+これは C# や Java、Python、TypeScript などの非関数型プログラミング言語でいうところの **変数** にあたります。
+
+（TBD）
