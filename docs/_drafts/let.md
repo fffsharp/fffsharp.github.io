@@ -97,3 +97,10 @@ number <- 200
 let mutable 束縛は主にパフォーマンスを重視するときに使われます。  
 また、mutable な値は通常、関数内などの非常に狭いスコープの中でのみの使用に留めます。これは簡単に制御ができる範囲内で使用することでバグの混入を極力減らすためです。  
 そのため皆さんも mutable な値を使用するさいは細心の注意を払うようにしましょう。  
+
+<br>  
+<br>  
+
+## 参考
+
+- [Values - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/)
