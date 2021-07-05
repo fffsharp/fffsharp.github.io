@@ -55,7 +55,7 @@ let title = "Fun Fan F#!!"
 let func = fun x -> x * 2
 {% endhighlight %}  
 
-難しいことは何もなく、とても簡単に let 束縛を使うことができます。  
+難しいことは何もなく、とても簡単に let 束縛を使えました。  
 それでは実際に let 束縛した値を計算に使ってみましょう。  
 
 {% highlight fsharp %}// 100 を束縛
