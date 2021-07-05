@@ -48,7 +48,7 @@ let title = "Fun Fan F#!!"
 let func = fun x -> x * 2
 {% endhighlight %}  
 
-難しいことは何もなく、とても簡単に let 束縛は使うことができます。  
+難しいことは何もなく、とても簡単に let 束縛を使うことができます。  
 それでは実際に let 束縛した値を計算に使ってみましょう。  
 
 {% highlight fsharp %}// 100 を束縛
@@ -78,5 +78,12 @@ oneHundred <- 200
 
 F# では基本的に値は immutable なものですが、変更可能な値 (= mutable な値) として let 束縛することもできます。その場合は **let mutable** というキーワードを利用して値を束縛します。  
 これは C# や Java、Python、TypeScript などの非関数型プログラミング言語でいうところの **変数** にあたります。let mutable で束縛した場合には **再代入** が許容されます。  
+再代入をする場合には ```<-``` を利用します。
+
+{% highlight fsharp %}// 100 を mutable な値として束縛
+let mutable number = 100
+// number を 200 に変更
+number <- 200
+{% endhighlight %}  
 
 （TBD）
