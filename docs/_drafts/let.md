@@ -46,7 +46,30 @@ let title = "Fun Fan F#!!"
 
 // 関数値
 let func = fun x -> x * 2
-{% endhighlight %}
+{% endhighlight %}  
+
+難しいことは何もなく、とても簡単に let 束縛は使うことができます。  
+それでは実際に let 束縛した値を計算に使ってみましょう。  
+
+{% highlight fsharp %}// 100 を束縛
+let oneHundred = 100
+// 整数値を 3 倍する関数値を束縛
+let triple = fun x -> 3 * x
+
+// 実際に計算をさせてみる
+let answer = triple oneHundred
+// 300 が出力される
+printfn $"%d{answer}"
+{% endhighlight %}  
+
+このように整数値を直接計算させた場合と遜色なく利用できます。  
+また既定では、C# や Java、Python、TypeScript などで許容されている **再代入** は禁止されています。  
+
+{% highlight fsharp %}// 100 を束縛
+let oneHundred = 100
+// F# では再代入は禁止されている
+oneHundred <- 200
+{% endhighlight %}  
 
 <br>  
 <br>  
@@ -54,6 +77,6 @@ let func = fun x -> x * 2
 ## let mutable  
 
 F# では基本的に値は immutable なものですが、変更可能な値 (= mutable な値) として let 束縛することもできます。その場合は **let mutable** というキーワードを利用して値を束縛します。  
-これは C# や Java、Python、TypeScript などの非関数型プログラミング言語でいうところの **変数** にあたります。
+これは C# や Java、Python、TypeScript などの非関数型プログラミング言語でいうところの **変数** にあたります。let mutable で束縛した場合には **再代入** が許容されます。  
 
 （TBD）
