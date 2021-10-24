@@ -4,11 +4,15 @@ title: {{ page.title }}
 ---
 
 <head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style type="text/css">
     body {
-      font-family: 'Helvetica Neue', Helvetica, 'Sawarabi Gothic', Arial, serif;
+      font-family: 'Source Code Pro', 'Noto Sans JP', Arial, serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Source Code Pro', 'Noto Sans JP', Arial, serif !important;
     }
   </style>
   {% if page.image %}
